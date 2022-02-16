@@ -1,0 +1,35 @@
+body{
+    background-image: url(bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+  }
+  
+  .mickey{
+    width: 300px;
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    /* forwards */
+    animation: mickeyAnim 8s infinite;
+    /* animation-timing-function: linear; */
+  }
+  .mickey img{
+    width: 100%;
+  }
+  
+  @keyframes mickeyAnim{
+    0%{
+      left: 0%;
+    transform: rotate(45deg);
+    }
+    /* 50%{
+      left: 50%;
+      top: 70%;
+      transform: rotate(-30deg);
+    } */
+    100%{
+      left: 100%;
+    }
+  }
